@@ -1,0 +1,19 @@
+<h2>Available Flights</h2>
+
+<table border="1">
+  <tr>
+    <th>Flight No</th>
+    <th>Source</th>
+    <th>Destination</th>
+    <th>Departure</th>
+    <th>Status</th>
+  </tr>
+
+  <tr *ngFor="let flight of flights">
+    <td>{{ flight.flightNumber }}</td>
+    <td>{{ flight.source }}</td>
+    <td>{{ flight.destination }}</td>
+    <td>{{ flight.departureTime }}</td>
+    <td>{{ flight.status }}</td>
+  </tr>
+</table>

@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/products" routerLinkActive="active">Home</a>
+    </li>
+
+    <li>
+      <a [routerLink]="['/products', 1]" routerLinkActive="active">
+        Product Detail
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

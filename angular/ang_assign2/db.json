@@ -1,0 +1,44 @@
+{
+  "flights": [
+    {
+      "id": 1,
+      "flightNo": "AI101",
+      "airline": "Indigo",
+      "from": "DEL",
+      "to": "MUM",
+      "time": "2025-01-20T10:30",
+      "price": 4500,
+      "status": "On Time"
+    },
+    {
+      "id": 2,
+      "flightNo": "BA202",
+      "airline": "Emirates",
+      "from": "DEL",
+      "to": "MUM",
+      "time": "2025-01-20T10:30",
+      "price": 85000,
+      "status": "Delayed"
+    },
+    {
+      "id": 3,
+      "flightNo": "SG303",
+      "airline": "SpiceJet",
+      "from": "DEL",
+      "to": "MUM",
+      "time": "2025-01-20T10:30",
+      "price": 6200,
+      "status": "On Time"
+    },
+    {
+      "id": 4,
+      "flightNo": "UK404",
+      "airline": "Vistara",
+      "from": "DEL",
+      "to": "MUM",
+      "time": "2025-01-20T10:30",
+      "price": 5600,
+      "status": "Cancelled"
+    }
+  ]
+}

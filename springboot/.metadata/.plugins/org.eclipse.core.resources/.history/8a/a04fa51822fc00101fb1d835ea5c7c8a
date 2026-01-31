@@ -1,0 +1,41 @@
+package com.example.service;
+ 
+import java.util.ArrayList;
+import java.util.List;
+ 
+import org.springframework.stereotype.Service;
+import com.example.model.flight;
+ 
+@Service   
+public class flightService {
+ 
+    private List<flight> flights = new ArrayList<>();
+ 
+    public flight addFlight(flight flight) {
+        flights.add(flight);
+        return flight;
+    }
+ 
+    public List<flight> getAllFlights() {
+        return flights;
+    }
+    
+    public flight updateFlight(Long id, flight updatedFlight) {
+    	for(flight flight :flights) {
+    		if(flight.getId().equals(id)) {
+    			flight.setFlightName(updatedFlight.getFlightName());
+    			flight.setSource(updatedFlight.getSource());
+    			flight.setDestination(updatedFlight.getDestination());
+    			return flight;
+    		}
+    	}
+    	return null;
+    }
+    
+    public String deleteFlight(Long id) {
+    flights.remove((id);
+    return "Flight deleted successfully";
+    }
+}
+ 
+ 

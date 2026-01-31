@@ -1,0 +1,24 @@
+package com.example.service;
+ 
+import java.util.ArrayList;
+import java.util.List;
+ 
+import org.springframework.stereotype.Service;
+import com.example.model.flight;
+ 
+@Service   
+public class flightService {
+ 
+    private List<flight> flights = new ArrayList<>();
+ 
+    public flight addFlight(flight flight) {
+        flights.add(flight);
+        return flight;
+    }
+ 
+    public List<flight> getAllFlights() {
+        return flights;
+    }
+}
+ 
+ 
