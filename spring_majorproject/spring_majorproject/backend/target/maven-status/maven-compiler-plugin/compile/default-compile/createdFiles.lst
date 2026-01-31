@@ -1,0 +1,5 @@
+com\flightapp\controller\FlightController.class
+com\flightapp\repository\FlightRepository.class
+com\flightapp\FlightApplication.class
+com\flightapp\service\FlightService.class
+com\flightapp\model\Flight.class
