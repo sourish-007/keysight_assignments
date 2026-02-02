@@ -18,6 +18,11 @@ public class Flight {
     private LocalDateTime departureTime;
     private String status; // On Time, Delayed, Cancelled
 
+    private Double economyPrice;
+    private Double premiumPrice;
+    private Integer economySeats;
+    private Integer premiumSeats;
+
     // Getters and Setters
     public Long getId() {
         return id;
@@ -65,5 +70,37 @@ public class Flight {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Double getEconomyPrice() {
+        return economyPrice;
+    }
+
+    public void setEconomyPrice(Double economyPrice) {
+        this.economyPrice = economyPrice;
+    }
+
+    public Double getPremiumPrice() {
+        return premiumPrice;
+    }
+
+    public void setPremiumPrice(Double premiumPrice) {
+        this.premiumPrice = premiumPrice;
+    }
+
+    public Integer getEconomySeats() {
+        return economySeats;
+    }
+
+    public void setEconomySeats(Integer economySeats) {
+        this.economySeats = economySeats;
+    }
+
+    public Integer getPremiumSeats() {
+        return premiumSeats;
+    }
+
+    public void setPremiumSeats(Integer premiumSeats) {
+        this.premiumSeats = premiumSeats;
     }
 }
